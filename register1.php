@@ -1,6 +1,6 @@
 <?php
 
-
+session_start();
 $server="localhost";
 $username="root";
 $password="";
@@ -10,8 +10,25 @@ $con=mysqli_connect($server,$username,$password,$dbname);
 $date=$_POST['date'];
 $time=$_POST['time'];
 $type=$_POST['type'];
-$dosage=$_POST['dosage'];
-   session_start();
+$userid=$_SESSION["userid"];
+$select="select * from vaccine_registration where u_id='$userid'";
+		
+		$result=mysqli_query($con,$select);
+		$count=mysqli_num_rows($result);
+		
+	if($count==0)
+	{
+		$dosage='1st dose';
+
+	}
+
+	else
+	{
+	
+       $dosage='2nd dose';
+	}
+
+
     
     $userid=$_SESSION["userid"];
    

@@ -46,7 +46,7 @@ else
    ('$first_name','$last_name','$address','$male_or_female','$email','$age','$password')";
    $value=mysqli_query($con,$insert);
 
-    header('Location: login.html');
+    header('Location: index.html');
  exit;
 
 }

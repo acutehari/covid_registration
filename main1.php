@@ -21,6 +21,7 @@ $_SESSION["vaccine"] = $co['v_type'];
 echo($_SESSION["vaccine"] );
 
 
+
 // if($_SESSION["username"]!=$type)
 // {
 //   echo("please enter the same type of dose");

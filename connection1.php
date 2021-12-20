@@ -14,6 +14,7 @@ $val=mysqli_query($con,$value);
 
 $count=mysqli_num_rows($val);
 
+
 if($count==0)
 {
 	echo("invalid username and password");

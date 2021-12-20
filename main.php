@@ -11,10 +11,31 @@
      echo $_SESSION["username"];
      ?>
      <br><br>
-   <a href="register.html">Click here to register for 1st dose</a> <br><br>
+     <?php
+
+      
+        $server="localhost";
+		$username="root";
+		$password="";
+		$dbname="project";
+		$userid=$_SESSION["userid"];
+		$con=mysqli_connect($server,$username,$password,$dbname);
+		$select="select * from vaccine_registration where u_id='$userid'";
+		
+		$result=mysqli_query($con,$select);
+		$count=mysqli_num_rows($result);
+		if($count<2)
+		{
+
+			echo "<a href='register.php'>Click here to register for dose</a>";
+			echo "<br>";
+
+		}
+
+        
 
    
-    
+     ?>
 
 </body>
 </html>
@@ -63,13 +84,7 @@ $count=mysqli_num_rows($resul);
 
  }
 
-else
-{
-	
-	echo( $_SESSION['username']); 
-	echo(" you dont have record on 1st dose.<b>click above link</b>for 1st dose to register");
-}
 
 ?>
 <br><br>
-	
+<a href="index.html">logout</a>
