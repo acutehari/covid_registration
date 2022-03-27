@@ -2,14 +2,69 @@
 <html>
 <head>
 	<title>login page</title>
+	<style type="text/css">
+   body{
+   	background: url(img/back.jpg);
+   	background-repeat: no-repeat;
+   	background-size: 100%;
+   	
+   }
+
+   .login_page{
+    font-family: serif;
+    font-size: 23px;
+ /*   text-align: center;*/
+    margin-right:90px;
+    padding: 20px;
+    background-color: #e3e3e3;
+    width: 400px;
+    margin: auto;
+    border-radius: 3px;
+    padding-left: 60px;
+    border : 1.5px solid black;
+    margin-top: 200px;
+   }
+  .submit{
+  	border : 1.5px solid black;
+  	padding: 10px 25px;
+  	border-radius: 3px;
+  	 background-color:#e3e3e3; 
+  	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  .submit:hover{
+   color: green;
+  }
+  h3{
+
+      margin: auto;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  }
+  .email{
+  	padding: 10px;
+  }
+  .password{
+  	margin-left: 70px;
+  }
+
+
+  </style>
 </head>
 <body>
-	<h3>login Here</h3>
+	<div class="login_page">
+
+	<h3><b>Login Here</b></h3>
 	<form action="connection1.php" method="POST">
-		
+	<div class="email">	
      User Email:<input type="text" name="user_mail" placeholder="enter mail" required><br><br>
+    </div>
+    <div class="Password">
      Password:<input type="text" name="Password" placeholder="enter Password" required><br><br>
-     <input type="submit" value="Submit">
+     <input type="submit" value="Submit" class="submit"><pre><a href="user_registration.html"><b>click here</b>for register</a>
+     </div>
+    </dvi>
 
 	</form>
  

@@ -3,6 +3,25 @@
 <html>
 <head>
 	<title>main page</title>
+    <style type="text/css">
+        body{
+            background: url(img/back.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-height: 100%;
+        }
+        .user{
+            border : 1.5px solid black;
+    padding: 10px 25px;
+    border-radius: 3px;
+     background-color:#e3e3e3; 
+     margin-right: 1400px;
+     font-size: 22px ;
+     
+
+
+        }
+    </style>
 </head>
 <body>
 	hi  
@@ -87,4 +106,6 @@ $count=mysqli_num_rows($resul);
 
 ?>
 <br><br>
+<div class="user">
 <a href="index.html">logout</a>
+</div>

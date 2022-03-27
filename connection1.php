@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 $server="localhost";
 $username="root";
@@ -14,10 +14,10 @@ $val=mysqli_query($con,$value);
 
 $count=mysqli_num_rows($val);
 
-
+ 
 if($count==0)
 {
-	echo("invalid username and password");
+	echo("<b>invalid username or password</b>");
 }
 else
 {

@@ -1,26 +1,129 @@
 <html>
 <head>
 	<title>covid form</title>
+  <style type="text/css">
+    
+   h3{
+
+    text-align:center;
+    font-family: serif;
+    font-size: 70px;
+    margin-top: 20px;
+   }
+   .register_process{
+    font-family: sans-serif;
+    font-size: 20px;
+ /*   text-align: center;*/
+    margin-right:90px;
+    padding: 20px;
+    background-color: #e3e3e3;
+    width: 400px;
+    margin: auto;
+    border-radius: 3px;
+    padding-left: 60px;
+    border : 1.5px solid black;
+    margin-top: -50px;
+   }
+   body{
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-height: 100%;
+   }
+  .address input{
+    margin-right: 28px;
+    margin-left:8px;
+    
+    padding: 15px 7px;
+    margin-left: 33px;
+  }
+
+  .gender{
+    margin-right: 90px;
+
+  }
+ 
+
+  .register_process input[type="text"],.register_process textarea{
+  margin-bottom:30px;
+  margin-width: 10px;
+  width:40%;
+  padding: 5px;
+  margin-left: 10px;
+}
+.submit{
+  padding: 15px 40px;
+  margin-top: -20px;
+  background-color: #99c3e5;
+  border-radius: 3px;
+  margin-left: 60px;
+  font-size: 20px;
+  margin-top: 20px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.submit:hover{
+  color: green;
+  cursor: pointer;
+  
+}
+.login{
+  text-align: center;
+  margin-top: -55px;
+  margin-left: 400px; 
+  font-size: 24px;
+  
+
+}
+
+
+  </style>
 </head>
 
 <body>
+  <div class="container">
    <h3>Register Here</h3>
-  <p><registration page></p>
-  	 <form action="connection.php" method="POST">
-   User First Name:<input type="text" name="user_name" placeholder="enter first name" required><br><br>
-   User Last Name:<input type="text" name="last_name" placeholder="enter last name" required><br><br>
-   User Address:<input type="text "name="address" placeholder="enter address" required></textarea><br><br>
-  Gender:<input type="radio" name="gender" value="male" >Male
-  <input type="radio" name="gender" value="female" checked >Female<br><br>
-  User Email:<input type="email" name="email" placeholder="enter email" required><br><br>
-  USer Age:<input type="text" name="age" placeholder="enter age" required><br><br>
-     Password:<input type="text" name="password" placeholder="enter password" required><br><br>
-  Confirm Password:<input type="text" name="confirm_password" placeholder="enter confirm password" required><br><br>
-  <input type="submit" value="Register">
+   <p><registration page></p>
 
+  	 <form action="connection.php" method="POST">
+      <div class="register_process">
+         <div class="user_firstname">
+   User First Name:<input type="text" name="user_name" placeholder="enter first name" required><br><br>
+        </div>
+       <div class="user_lastname">
+   User Last Name:<input type="text" name="last_name" placeholder="enter last name" required><br><br>
+       </div>
+       <div class="address">
+   User Address:<input type="text "name="address" placeholder="enter address" required></textarea><br><br>
+       </div>
+       <div class="gender">
+  Gender:<input type="radio" name="gender" value="male" >Male
+
+  <input type="radio" name="gender" value="female" checked >Female<br><br>
+      </div>
+      <div class="email">
+
+  User Email:<input type="email" name="email" placeholder="enter email" required><br><br>
+     </div>
+     <div class="age">
+  USer Age:<input type="text" name="age" placeholder="enter age" required><br><br>
+     </div>
+     <div class="password">
+     Password:<input type="text" name="password" placeholder="enter password" required><br><br>
+     </div>
+   <div class="confirm_password">
+  Confirm Password:<input type="text" name="confirm_password" placeholder="enter confirm password" required><br><br>
+  </div>
+  <div class="phone_number">
+    Phone Number: <input type = "text" name= "phone_number" placeholder="enter phone number" required><br><br>
+  </div>
+   <input type="submit" value="Register" class="submit">
+  </div>
+  <div class="login">
+    <a href="login.html"><b>login</b></a>
+  </div>
 
 
   </form>
-
+</div>
 
 </body>
